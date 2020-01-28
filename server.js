@@ -6,8 +6,9 @@ var knex= require('knex')
 var bcrypt=require('bcryptjs')
 var jwt=require('jsonwebtoken')
 const db=knex({
-  connectionString: process.env.DATABASE_URL,
-  ssl: true,
+  client: 'pg',
+  connection:{connectionString: process.env.DATABASE_URL,
+  ssl: true,}
 });
 const SECRET='WHY SHOULD I TELL YOU'
 var user;
