@@ -35,9 +35,9 @@ app.post('/signin', (req, res) => {
     bcrypt.compare(req.body.password, rows[0].password, (error, matched) => {
       if (!error && matched) {
         res.status(201).json({token: jwt.sign({ email: rows[0].email,id:rows[0].id}, SECRET)})
-      } else res.status(401).send()
+      } else res.status(401).json({message:"Wrong Crendentials"})
     })
-  } else res.status(401).send('cannot login')
+  } else res.status(401).json({message:'Email Id not registered'})
   })
 })
 
