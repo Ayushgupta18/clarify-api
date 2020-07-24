@@ -52,6 +52,7 @@ app.post('/register', (req, res) => {
       name:req.body.name
     })
     .then(res.status(201).send('registered'))
+    .catch((err)=>res.status(201).send(err))
   })
 })
 
