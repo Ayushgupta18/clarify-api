@@ -51,8 +51,9 @@ app.post('/register', (req, res) => {
       password:hash,
       name:req.body.name
     })
+    .catch((err)=>res.status(400).send(err))
     .then(res.status(201).send('registered'))
-    .catch((err)=>res.status(201).send(err))
+    
   })
 })
 
