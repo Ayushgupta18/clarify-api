@@ -1,4 +1,4 @@
-# SmartBrain-api - v1
+# Clarify-api - v1
 Final project for Udemy course
 
 1. Clone this repo
