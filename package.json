@@ -13,7 +13,7 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "knex": "^0.14.6",
     "node-pre-gyp": "^0.14.0",
     "pg": "^7.12.1"
